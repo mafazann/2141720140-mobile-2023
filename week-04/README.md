@@ -19,7 +19,7 @@ print(list[1]);
 ```
 Langkah 2: Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
 
-![SS](docs/P1S1.png)
+![SS83](docs/P1S1.png)
 
 Langkah 3: Ubah kode pada langkah 1 menjadi variabel final yang mempunyai index = 5 dengan default value = null. Isilah nama dan NIM Anda pada elemen index ke-1 dan ke-2. Lalu print dan capture hasilnya. Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
 ```dart
@@ -34,7 +34,7 @@ void main() {
 }
 ```
 
-![SS](docs/P1.png)
+![SS84](docs/P1.png)
 
 <br><br>
 
@@ -49,7 +49,7 @@ print(halogens);
 Langkah 2:
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 
-![SS](docs/P2S1.png)
+![SS85](docs/P2S1.png)
 
 Langkah 3:
 Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
@@ -66,7 +66,7 @@ print(names3);
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan ketiga variabel tersebut. Tambahkan elemen nama dan NIM Anda pada kedua variabel Set tersebut dengan dua fungsi berbeda yaitu .add() dan .addAll(). Untuk variabel Map dihapus, nanti kita coba di praktikum selanjutnya.
 Dokumentasikan code dan hasil di console, lalu buat laporannya.
 
-![SS](docs/P2S2.png)
+![SS86](docs/P2S2.png)
 
 ```dart
 void main() {
@@ -84,7 +84,7 @@ names1.add('Nama: M.Rizky Mafazan');
   print('names3: $names3');
 }
 ```
-![SS](docs/P2.png)
+![SS87](docs/P2.png)
 
 <br><br>
 
@@ -112,7 +112,7 @@ print(nobleGases);
 Langkah 2:
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 
-![SS](docs/P3.png)
+![SS88](docs/P3.png)
 > Penggunaan Map dalam Dart, yang digunakan untuk mengaitkan kunci (keys) dengan nilai-nilai (values)
 
 Langkah 3:
@@ -170,7 +170,7 @@ void main() {
   print(mhs2);
 }
 ```
-![SS](docs/P3jwb.png)
+![SS89](docs/P3jwb.png)
 
 <br><br>
 ## Praktikum 4: Eksperimen Tipe Data List: Spread dan Control-flow Operators
@@ -186,7 +186,7 @@ print(list2.length);
 
 Langkah 2:
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
-![SS](docs/P4w.png)
+![SS90](docs/P4w.png)
 
 
 Langkah 3:
@@ -198,7 +198,7 @@ var list3 = [0, ...?list1];
 print(list3.length);
 ```
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
-![SS](docs/P4w2.png)
+![SS91](docs/P4w2.png)
 
 Tambahkan variabel list berisi NIM Anda menggunakan Spread Operators. Dokumentasikan hasilnya dan buat laporannya! 
 
@@ -210,7 +210,7 @@ var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
 print(nav);
 ```
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Tunjukkan hasilnya jika variabel promoActive ketika true dan false.
-![SS](docs/P4l4.png)
+![SS92](docs/P4l4.png)
 
 Langkah 5:
 Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
@@ -219,7 +219,7 @@ var nav2 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'
 print(nav2);
 ```
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Tunjukkan hasilnya jika variabel login mempunyai kondisi lain.
-![SS](docs/P4l5.png)
+![SS93](docs/P4l5.png)
 
 Langkah 6:
 Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
@@ -231,7 +231,7 @@ assert(listOfStrings[1] == '#1');
 print(listOfStrings);
 ```
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Jelaskan manfaat Collection For dan dokumentasikan hasilnya.
-![SS](docs/P4l6.png)
+![SS94](docs/P4l6.png)
 
 <br><br>
 ## Praktikum 5: Eksperimen Tipe Data Records
@@ -249,7 +249,7 @@ print(record)
 Langkah 2:
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 
-![SS](docs/P51.png)
+![SS95](docs/P51.png)
 > Menginisialisasi sebuah map dengan beberapa pasangan key-value dan kemudian mencetak isi map tersebut menggunakan fungsi print.
 
 Langkah 3:
@@ -263,7 +263,7 @@ Tambahkan kode program berikut di luar scope void main(), lalu coba eksekusi (Ru
 ```
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gunakan fungsi tukar() di dalam main() sehingga tampak jelas proses pertukaran value field di dalam Records.
 
-![SS](docs/P53.png)
+![SS96](docs/P53.png)
 
 Langkah 4:
 Tambahkan kode program berikut di dalam scope void main(), lalu coba eksekusi (Run) kode Anda.
@@ -276,7 +276,7 @@ print(mahasiswa);
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Inisialisasi field nama dan NIM Anda pada variabel record mahasiswa di atas. Dokumentasikan hasilnya dan buat laporannya!
 
 
-![SS](docs/P54.png)
+![SS97](docs/P54.png)
 
 ```dart
 void main() {
@@ -284,7 +284,7 @@ void main() {
   print(mahasiswa);
 }
 ```
-![SS](docs/P55.png)
+![SS98](docs/P55.png)
 
 Langkah 5:
 Tambahkan kode program berikut di dalam scope void main(), lalu coba eksekusi (Run) kode Anda.
@@ -310,7 +310,7 @@ print(mahasiswa2.b); // Prints true
 print(mahasiswa2.$2); // Prints 'last'
 }
 ```
-![SS](docs/P56.png)
+![SS99](docs/P56.png)
 
 <br><br>
 
