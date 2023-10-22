@@ -14,18 +14,18 @@
 
 ## Praktikum 2: Implementasi button row
 
-![Screenshot praktikum_1](docs/Prat1.png)
+![Screenshot praktikum_2](docs/Prat2.png)
 
 ---
 
 ## Praktikum 3: Implementasi text section
 
-![Screenshot praktikum_1](docs/Prat1.png)
+![Screenshot praktikum_3](docs/Prat3.png)
 
 ---
 
 ## Praktikum 4: Implementasi image section
 
-![Screenshot praktikum_1](docs/Prat1.png)
+![Screenshot praktikum_4](docs/Prat4.png)
 
 ---
