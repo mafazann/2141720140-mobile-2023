@@ -35,4 +35,4 @@ Langkah 7 : Menambahkan aksi pada ListView
 
 ![Screenshot 7](docs/Langkah7.png)
 
-# Tugas Praktikum
+# Tugas Praktikumm
