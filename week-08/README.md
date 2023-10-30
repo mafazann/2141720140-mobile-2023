@@ -21,7 +21,7 @@
                 <img src="docs/Praktikum.gif" style="width: 200px">
             </td>
              <td>
-                <img src="docs/tugas.gif" style="width: 200px">
+                <img src="docs/Tugas.gif" style="width: 200px">
             </td>
         </tr>
     </tbody>
