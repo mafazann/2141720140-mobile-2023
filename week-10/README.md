@@ -36,9 +36,9 @@
 2. Jelaskan maksud dari langkah 2 pada praktikum tersebut!
 > Kode terminal pada langkah 2 tersebut digunakan untuk menambahkan paket *auto_size_text* ke proyek Flutter Anda. Paket ini memungkinkan kita menggunakan widget *AutoSizeText* yang secara otomatis menyesuaikan ukuran teks untuk sesuai dengan batasnya.
 3. Jelaskan maksud dari langkah 5 pada praktikum tersebut!
-> Pada langkah 5, ditambahkan varibel text dan parameter di constructor, maksud dari langkah ini
+> Pada langkah 5, ditambahkan varibel text dan parameter di constructor, maksud dari langkah ini menampilkan teks berwarna merah dan memiliki kemampuan untuk diberi kunci unik untuk pengidentifikasian yang efisien. Teks yang akan ditampilkan oleh widget ini disimpan dalam variabel text.
 4. Pada langkah 6 terdapat dua widget yang ditambahkan, jelaskan fungsi dan perbedaannya!
-> Terdapat 2 Widget pada Langkah 6, kedua widget tersebut digunakan untuk, perbedaannya pada 
+> Terdapat 2 Widget pada Langkah 6, pada widget yang pertama menggunakan RedTextWidget, digunakan untuk menampilkan teks dengan warna merah. Sedangkan pada widget yang kedua, teks ditampilkan dengan menggunakan widget bawaan Text. Ini adalah widget Flutter standar yang digunakan untuk menampilkan teks dengan gaya default. RedTextWidget memiliki tampilan khusus yang disesuaikan, sementara Text hanya menampilkan teks dengan gaya default.
 5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi ini !
 
 |Parameter          |Penjelasan                
