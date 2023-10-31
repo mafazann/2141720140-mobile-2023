@@ -10,5 +10,6 @@
 |Week 04         |Tipe Data                      |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-04                             
 |Week 05         |Flutter Fundamental            |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-05      
 |Week 07         |Layout                         |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-07
-|Week 08         |Navigasi                        |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-08
+|Week 08         |Navigasi                       |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-08
+|Week 10         |Plugin                         |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-10
 
