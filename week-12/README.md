@@ -81,5 +81,10 @@ Future<Response> getData() async {
 }
 ```
 
-![Praktikum1](docs/Praktikum1.gif)
+
+**Soal 2**
+
+![Praktikum1 Soal 2](docs/P1Soal2_1.png)
+
+![Praktikum1 Soal 2](docs/P1Soal2_2.png)
 
