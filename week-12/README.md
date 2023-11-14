@@ -75,7 +75,7 @@ class _FuturePageState extends State<FuturePage> {
 
 Future<Response> getData() async {
   const authority = 'www.googleapis.com';
-  const path = '/books/v1/volumes/junbDWAAQBAJ*';
+  const path = '/books/v1/volumes/VEUFEAAAQBAJ';
   Uri url = Uri.https(authority, path);
   return http.get(url);
 }
@@ -88,3 +88,11 @@ Future<Response> getData() async {
 
 ![Praktikum1 Soal 2](docs/P1Soal2_2.png)
 
+
+**Soal 3**
+- Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
+> substring() digunakan untuk mengambil substring dari sebuah string, dimulai dari indeks awal dan berakhir pada indeks akhir yang diberikan, sedangkan catchError() digunakan untuk menangani kesalahan yang terjadi dalam operasi asinkron.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3".
+
+![Praktikum1 Soal 2](docs/P1Capture.gif)
