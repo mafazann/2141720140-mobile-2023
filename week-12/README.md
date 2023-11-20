@@ -208,3 +208,13 @@ class _LocationScreenState extends State<LocationScreen> {
 > Karena Flutter web menggunakan API Geolocation langsung dari browser. Pada Flutter web, izin untuk mengakses lokasi dikelola oleh browser, bukan oleh sistem operasi (seperti Android pada perangkat seluler). Oleh karena itu, meskipun tidak menambahkan izin secara langsung ke `AndroidManifest`, koordinat GPS masih dapat diperoleh di browser, tetapi tetap memerlukan izin dari pengguna.
 
 ![Praktikum Soal 12](docs/P6Capture12.gif)
+
+
+### Praktikum 7: Manajemen Future dengan FutureBuilder
+
+**Soal 13**
+
+- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+Tidak ada perbedaan UI dengan praktikum sebelumnya, keduanya tetap menampilkan koordinat Geolokasi dengan layout yang sama karena keduanya masih mengambil lokasi secara sinkron dalam blok `initState`.
+
+![Praktikum Soal 13](docs/P7Capture13.gif)
