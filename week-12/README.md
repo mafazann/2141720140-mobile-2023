@@ -275,4 +275,4 @@ class _NavigationFirstState extends State<NavigationFirst> {
 
 - Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
 
-![Praktikum Soal 16](docs/P8Capture16.gifgif)
+![Praktikum Soal 16](docs/P8Capture16.gif)
