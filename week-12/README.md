@@ -115,3 +115,10 @@ Future<Response> getData() async {
 
 - Jelaskan maksud kode langkah 2 tersebut!
 > Kode ini mendefinisikan sebuah kelas bernama Completer dengan variabel bernama completer. Kelas Completer digunakan untuk membuat objek Future yang dapat diselesaikan nanti. Kode ini juga mendefinisikan sebuah metode bernama getNumber() yang mengembalikan objek Future. Metode ini pertama-tama membuat objek completer baru, kemudian memanggil metode calculate(), dan terakhir mengembalikan objek completer.future. Metode calculate() menggunakan await Future.delayed(const Duration(seconds: 5)) untuk menunda eksekusi selama 5 detik. Setelah 5 detik, metode ini melengkapi objek completer dengan nilai 42.
+
+**Soal 6**
+
+![Praktikum Soal 6](docs/P3Capture6.gif)
+
+- Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+> Pada langkah 5 mengubah metode calculate dengan menambahkan blok try-catch. Jika terjadi kesalahan selama operasi asinkron (misalnya, penundaan gagal), blok catch akan menangkap kesalahan tersebut, dan completer akan diselesaikan dengan sebuah objek kosong {}. Sedangkan Langkah 6 yaitu bagian dari fungsi onPressed pada tombol "GO!" yang memanggil metode getNumber. Pada langkah ini, setelah pemanggilan getNumber, then digunakan untuk menangkap hasilnya. Dalam blok then, nilai hasil dikonversi menjadi string dan diperbarui ke dalam variabel result melalui setState. Jika ada kesalahan, catchError akan menangkapnya dan mengatur result ke string "An error Occurred".
