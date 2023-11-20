@@ -134,3 +134,9 @@ Future<Response> getData() async {
 
 - Jelaskan maksud perbedaan kode langkah 1 dan 4!
 > FutureGroup lebih fleksibel daripada Future.wait(). FutureGroup dapat digunakan untuk melakukan hal-hal seperti Membatalkan eksekusi future,Menangani kesalahan yang terjadi di future dan Mendapatkan hasil future dalam urutan apa pun. Sedangkan Future.wait() lebih mudah digunakan dan cukup untuk banyak kasus penggunaan.
+
+### Praktikum 5: Menangani Respon Error pada Async Code
+
+**Soal 9**
+
+![Praktikum Soal 9](docs/P5Capture9.gif)
