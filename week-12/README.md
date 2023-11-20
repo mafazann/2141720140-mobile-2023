@@ -147,3 +147,55 @@ Future<Response> getData() async {
 > Pada langkah 1, method returnError() tidak menangani error yang terjadi. Jika error terjadi, maka method tersebut akan berhenti dan tidak mengembalikan nilai apa pun. Sedangkan pada langkah 4, method handleError() menangani error yang terjadi dengan menggunakan try-catch-finally. Pada try block, method handleError() mencoba untuk menjalankan method returnError(). Jika error terjadi, maka try block akan berhenti dan error akan ditangkap oleh catch block. Pada catch block, method handleError() akan menampilkan error ke layar menggunakan print(). Finally block akan selalu dijalankan, terlepas dari apakah ada error yang terjadi atau tidak.
 
 ![Praktikum Soal 10](docs/P5Capture10.png)
+
+### Praktikum 6: Menggunakan Future dengan StatefulWidget
+
+**Soal 11**
+
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
+
+class LocationScreen extends StatefulWidget {
+  const LocationScreen({super.key});
+
+  @override
+  State<LocationScreen> createState() => _LocationScreenState();
+}
+
+class _LocationScreenState extends State<LocationScreen> {
+  String myPosition = '';
+
+  @override
+  void initState() {
+    super.initState();
+    getPosition().then((Position myPos) {
+      setState(() {
+        myPosition =
+            'Latitude: ${myPos.latitude.toString()} - Longitude: ${myPos.longitude.toString()}';
+      });
+    });
+  }
+
+  Future<Position> getPosition() async {
+    await Geolocator.requestPermission();
+    await Geolocator.isLocationServiceEnabled();
+    Position? position = await Geolocator.getCurrentPosition();
+    return position;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+    title: const Text("Current Location Mafazan"),
+      ),
+      body: Center(
+        child: Text(myPosition),
+      ),
+    );
+  }
+}
+```
