@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,8 @@ class FuturePage extends StatefulWidget {
 
 class _FuturePageState extends State<FuturePage> {
   String result = '';
-  @override
+  late Completer completer;
+@override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -45,8 +47,17 @@ class _FuturePageState extends State<FuturePage> {
           children: [
             const Spacer(),
             ElevatedButton(
-                onPressed: count,
-                child: const Text("GO!")),
+              onPressed: () {
+                getNumber().then((value) {
+                  setState(() {
+                    result = value.toString();
+                  });
+                }).catchError((e) {
+                  result = 'An error Occured';
+                });
+              },
+              child: const Text("GO!"),
+            ),
             const Spacer(),
             Text(result),
             const Spacer(),
@@ -58,31 +69,38 @@ class _FuturePageState extends State<FuturePage> {
     );
   }
 
-
-
-Future<Response> getData() async {
-  const authority = 'www.googleapis.com';
-  const path = '/books/v1/volumes/VEUFEAAAQBAJ';
-  Uri url = Uri.https(authority, path);
-  return http.get(url);
-}
-
-Future<int> returnOneAsync() async {
-  await Future.delayed(const Duration(seconds: 3));
-  return 1;
-}
-
-Future<int> returnTwoAsync() async {
-  await Future.delayed(const Duration(seconds: 3));
-  return 2;
-}
-
-Future<int> returnThreeAsync() async {
-  await Future.delayed(const Duration(seconds: 3));
-  return 3;
-}
-
-Future count() async {
+Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+  calculate() async {
+    try {
+      await Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+    } catch (e) {
+      completer.completeError({});
+    }
+  }
+  Future<Response> getData() async {
+    const authority = 'www.googleapis.com';
+    const path = '/books/v1/volumes/VEUFEAAAQBAJ';
+    Uri url = Uri.https(authority, path);
+    return await http.get(url);
+  }
+  Future<int> returnOneAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 1;
+  }
+  Future<int> returnTwoAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 2;
+  }
+  Future<int> returnThreeAsync() async {
+    await Future.delayed(const Duration(seconds: 3));
+    return 3;
+  }
+  Future count() async {
     int total = 0;
     total = await returnOneAsync();
     total += await returnTwoAsync();
