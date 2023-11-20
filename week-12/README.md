@@ -96,3 +96,13 @@ Future<Response> getData() async {
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3".
 
 ![Praktikum1 Soal 2](docs/P1Capture.gif)
+
+### Praktikum 2: Menggunakan await/async untuk menghindari callbacks
+
+![Praktikum1 Soal 2](docs/P2Capture.gif)
+
+**Soal 4**
+- Jelaskan maksud kode langkah 1 dan 2 tersebut!
+> Pada langkah 1, dilakukan penambahan tiga method baru dalam kelas _FuturePageState. Metode-metode ini, yaitu returnOneAsync, returnTwoAsync, dan returnThreeAsync, sebenarnya melakukan operasi asinkron yang mensimulasikan penundaan selama 3 detik dan mengembalikan nilai 1, 2, dan 3 secara berturut-turut.
+
+> Pada langkah 2, dilakukan penambahan method count. Method ini memiliki tiga pemanggilan fungsi asinkron (await) ke metode-metode yang telah ditambahkan sebelumnya. Method count menghitung jumlah total dari hasil yang dikembalikan oleh metode-metode asinkron dan kemudian mengatur nilai result dalam state untuk menampilkan hasilnya.
