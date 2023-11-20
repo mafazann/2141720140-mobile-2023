@@ -225,3 +225,45 @@ class _LocationScreenState extends State<LocationScreen> {
 > Tidak ada perbedaan, karena hanya menambahkan `handleError()` yang akan dijalankan ketika terdapat kesalahan. Pesan **Something terrible happened!** tidak muncul karenan tidak ada kesalahan.
 
 ![Praktikum Soal 14](docs/P7Capture14.gif)
+
+### Praktikum 8: Navigation route dengan Future Function
+
+**Soal 15**
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+```dart
+import 'package:flutter/material.dart';
+
+class NavigationFirst extends StatefulWidget {
+  const NavigationFirst({super.key});
+
+  @override
+  State<NavigationFirst> createState() => _NavigationFirstState();
+}
+
+class _NavigationFirstState extends State<NavigationFirst> {
+  Color color = Color.fromARGB(255, 210, 210, 25);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: color,
+      appBar: AppBar(
+        title: const Text('Navigation First Screen Mafazan'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+            child: const Text('Change Color'),
+            onPressed: () {
+              _navigateAndGetColor(context);
+            }),
+      ),
+    );
+  }
+}
+```
+
+- Silakan ganti dengan warna tema favorit Anda.
+```dart
+class _NavigationFirstState extends State<NavigationFirst> {
+  Color color = Color.fromARGB(255, 210, 210, 25);
+```
