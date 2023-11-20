@@ -229,7 +229,7 @@ class _LocationScreenState extends State<LocationScreen> {
 ### Praktikum 8: Navigation route dengan Future Function
 
 **Soal 15**
-- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda .
 
 ```dart
 import 'package:flutter/material.dart';
