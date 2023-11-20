@@ -122,3 +122,10 @@ Future<Response> getData() async {
 
 - Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
 > Pada langkah 5 mengubah metode calculate dengan menambahkan blok try-catch. Jika terjadi kesalahan selama operasi asinkron (misalnya, penundaan gagal), blok catch akan menangkap kesalahan tersebut, dan completer akan diselesaikan dengan sebuah objek kosong {}. Sedangkan Langkah 6 yaitu bagian dari fungsi onPressed pada tombol "GO!" yang memanggil metode getNumber. Pada langkah ini, setelah pemanggilan getNumber, then digunakan untuk menangkap hasilnya. Dalam blok then, nilai hasil dikonversi menjadi string dan diperbarui ke dalam variabel result melalui setState. Jika ada kesalahan, catchError akan menangkapnya dan mengatur result ke string "An error Occurred".
+
+
+### Praktikum 4: Memanggil Future secara paralel
+
+**Soal 7**
+
+![Praktikum Soal 7](docs/P4Capture7.gif)
