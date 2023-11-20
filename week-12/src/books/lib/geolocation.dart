@@ -47,9 +47,12 @@ Future<Position>? position;
           child: FutureBuilder(
         future: position,
         builder: (BuildContext context, AsyncSnapshot<Position> snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
+          if (snapshot.connectionState == 
+          ConnectionState.waiting) {
             return const CircularProgressIndicator();
-          } else if (snapshot.connectionState == ConnectionState.done) {
+          }
+          else if (snapshot.connectionState ==
+          ConnectionState.done) {
             if (snapshot.hasError) {
               return Text('Something terrible happened!');
             }

@@ -215,6 +215,13 @@ class _LocationScreenState extends State<LocationScreen> {
 **Soal 13**
 
 - Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
-Tidak ada perbedaan UI dengan praktikum sebelumnya, keduanya tetap menampilkan koordinat Geolokasi dengan layout yang sama karena keduanya masih mengambil lokasi secara sinkron dalam blok `initState`.
+> Tidak ada perbedaan UI dengan praktikum sebelumnya, keduanya tetap menampilkan koordinat Geolokasi dengan layout yang sama karena keduanya masih mengambil lokasi secara sinkron dalam blok `initState`.
 
 ![Praktikum Soal 13](docs/P7Capture13.gif)
+
+**Soal 14**
+
+- Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+> Tidak ada perbedaan, karena hanya menambahkan `handleError()` yang akan dijalankan ketika terdapat kesalahan. Pesan **Something terrible happened!** tidak muncul karenan tidak ada kesalahan.
+
+![Praktikum Soal 14](docs/P7Capture14.gif)
