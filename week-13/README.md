@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Stream',
+      title: 'Stream Mafazan',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -58,6 +58,23 @@ class StreamHomePageState extends State<StreamHomePage> {
 
 - Tambahkan 5 warna lainnya sesuai keinginan Anda pada variabel colors tersebut.
 - Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
+
+```dart
+import 'package:flutter/material.dart';
+
+class ColorStream {
+  final List<Color> colors = [
+  Colors.red,
+  Colors.yellow,
+  Colors.blue,
+  Colors.green,
+  Colors.teal,
+];
+
+
+}
+
+```
 
 
 **Soal 3**
