@@ -13,4 +13,6 @@
 |Week 08         |Navigasi                       |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-08
 |Week 10         |Plugin                         |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-10
 |Week 11         |Dasar State                    |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-11
+|Week 12         |Pemrograman Asynchronous       |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-12
+|Week 13         |Streams                        |https://github.com/mafazann/2141720140-mobile-2023/tree/main/week-13
 
