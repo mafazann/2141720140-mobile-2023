@@ -45,7 +45,7 @@ class StreamHomePage extends StatefulWidget {
   State<StreamHomePage> createState() => _StreamHomePageState();
 }
 
-class StreamHomePageState extends State<StreamHomePage> {
+class _StreamHomePageState extends State<StreamHomePage> {
   @override
   Widget build(BuildContext context) {
     return Container();
