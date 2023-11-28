@@ -149,7 +149,16 @@ class ColorStream {
 **Soal 9**
 
 - Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+> Pada langkah 2 maksudnya adalah untuk melakukan langganan (subscribe) pada stream, sehingga dapat memperoleh informasi atau output yang dihasilkan oleh stream tersebut. 
+
+> Pada langkah 6 terdapat pemanggilan method cancel pada objek subscription terhadap stream, sehingga listener tidak akan menerima pembaruan lebih lanjut dari stream tersebut setelah pemanggilan ini. Hal ini dapat berguna saat widget dihapus atau tidak lagi memerlukan pembaruan dari stream tertentu.
+
+> Pada langkah 8, function addRandomNumber() akan menghasilkan angka acak antara 0-9 dan kemudian menambahkannya ke sink di objek numberStream. Namun, sebelum melakukan itu, fungsi memeriksa apakah sink telah ditutup. Jika sink masih terbuka, random number akan ditambahkan ke dalam stream, jika tidak, nilai lastNumber diatur menjadi -1 melalui setState. Hal ini untuk mengantisipasi situasi di mana stream telah ditutup dan tidak bisa menerima data lebih lanjut.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![Praktikum Soal 9](docs/Soal9.png)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
 
 ### Praktikum 5: Multiple stream subscriptions
