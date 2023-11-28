@@ -173,7 +173,11 @@ class ColorStream {
 **Soal 11**
 
 - Jelaskan mengapa hal itu bisa terjadi ?
+> Saat tombol "New Random Number" ditekan, maka akan menghasilkan dua angka random yang sama. Angka-angka tersebut merupakan output dari stream yang dipanggil oleh objek subscription dan subscription2. Stream tersebut akan mengembalikan nilai berupa event (angka random) yang dipisahkan dengan tanda "-". Saat tombol "Stop Stream" ditekan, maka akan menghentikan langganan terhadap stream. Hal ini menyebabkan stream tidak lagi bisa mengeluarkan output, meskipun tombol "New Random Number" ditekan.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![Praktikum Soal 11](docs/Soal11.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
 
 ### Praktikum 6: StreamBuilder
