@@ -120,6 +120,9 @@ class ColorStream {
 **Soal 7**
 
 - Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+
+> Pada kode langkah 13 sampai 15 yaitu membuat handling ketika terjadi error menggunakan metode `addError()` dalam class `stream.dart`. Dalam konteks ini, jika terjadi error atau kesalahan selama proses iterasi atau saat `stream` menghasilkann ilai, maka fungsi `addError()` dipanggil untuk menangani situasi tersebut. Sebagai hasil dari penanganan kesalahan, nilai variabel dari `lastNumber` akan diatur menjadi -1.
+
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
 
