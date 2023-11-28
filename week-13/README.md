@@ -107,7 +107,14 @@ class ColorStream {
 **Soal 6**
 
 - Jelaskan maksud kode langkah 8 dan 10 tersebut!
+> Pada langkah 8 tersebut mencakup pengaturan awal untuk mengelola aliran data atau stream angka. Pada bagian ini, objek NumberStream dibuat dan diinisialisasi, termasuk juga pengambilan controller dari objek tersebut. Controller ini digunakan untuk mengontrol aliran data dan mendapatkan objek Stream dari controller, serta menambahkan listener ke aliran data. Dalam hal ini, ketika ada data baru yang diterima di aliran, fungsi yang ditentukan dalam blok listen akan dijalankan. Fungsi ini menggunakan setState untuk memperbarui state dengan nilai terbaru dari aliram, yang dalam konteks ini disimpan sebagai lastNumber.
+
+> Pada Langkah 10 terdiri dari fungsi addRandomNumber(), yang bertujuan untuk menambahkan angka acak ke aliran data. Dalam fungsi ini, objek Random dibuat untuk menghasilkan angka acak antara 0 dan 9. Angka acak ini kemudian ditambahkan ke sink pada objek NumberStream. Dengan melakukan hal ini, nilai yang ditambahkan akan dikirimkan ke semua listener yang telah didaftarkan ke aliran data tersebut, sehingga memungkinkan tindakan tertentu diambil ketika ada perubahan nilai dalam aliran data.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![Praktikum Soal 6](docs/Soal6.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
 
 **Soal 7**
