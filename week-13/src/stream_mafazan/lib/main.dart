@@ -37,6 +37,8 @@ class _StreamHomePageState extends State<StreamHomePage> {
   late StreamController<int> numberStreamController;
   late NumberStream numberStream;
   late StreamSubscription<int> subscription;
+  late StreamSubscription subscription2;
+  String values = '';
 
   @override
   void initState() {
@@ -46,10 +48,16 @@ class _StreamHomePageState extends State<StreamHomePage> {
     numberStreamController = numberStream.controller;
     Stream<int> stream = numberStreamController.stream;
 
-    subscription = stream.listen(
+    subscription = stream.listen((event) {
+      setState(() {
+        values += '$event - ';
+      });
+      // super.initState();
+    });
+    subscription2 = stream.listen(
       (event) {
         setState(() {
-          lastNumber = event;
+          values += '$event -';
         });
       },
       onError: (error) {

@@ -166,6 +166,9 @@ class ColorStream {
 **Soal 10**
 
 - Jelaskan mengapa error itu bisa terjadi ?
+> Error tersebut terjadi saat mencoba menambahkan atau membuat dua subscription pada stream yang sama tanpa membatalkan subscription sebelumnya. Situasi ini terjadi ketika subscription2 diinisialisasi dalam metode initState(), padahal subscription pertama sudah ada untuk menangani stream yang sama pada saat yang bersamaan.
+
+![Praktikum Soal 10](docs/Soal10.png)
 
 **Soal 11**
 
