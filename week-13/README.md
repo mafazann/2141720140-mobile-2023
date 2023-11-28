@@ -199,5 +199,28 @@ class ColorStream {
 **Soal 13**
 
 - Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+
+> RandomNumberBloc:
+- Class ini bertanggung jawab untuk mengelola logika bisnis terkait dengan angka acak.
+- Mempunyai dua StreamController: _generateRandomController untuk input event dan _randomNumberController untuk output stream.
+- Memiliki method generateRandom, yang merupakan sink untuk memasukkan event ke dalam bloc.
+- Memiliki stream randomNumber, yang dapat diakses oleh widget untuk mendengarkan perubahan pada angka acak.
+- Di dalam konstruktor, ketika ada event masuk (_generateRandomController.stream.listen), sebuah angka acak di-generate dan dikirimkan ke output stream (_randomNumberController.sink.add(random)).
+
+> RandomScreen:
+
+- Class ini adalah widget yang menampilkan antarmuka pengguna terkait dengan angka acak.
+- Membuat instance dari RandomNumberBloc (final _bloc = RandomNumberBloc();) untuk mengelola logika bisnis dan state.
+- Menggunakan StreamBuilder untuk mendengarkan perubahan pada stream randomNumber dari BLoC.
+- Saat tombol FAB (Floating Action Button) ditekan, memanggil method generateRandom pada BLoC untuk memicu pembangkitan angka acak.
+
+> Main :
+
+ Di dalam class ini, fungsi main digunakan untuk memulai aplikasi. Dengan menggunakan MaterialApp, kita menetapkan tema dasar aplikasi dan menentukan bahwa layar awal akan menampilkan RandomScreen sebagai widget utama. Hal ini mengikuti konsep BLoC, di mana RandomScreen bertindak sebagai bagian antarmuka pengguna yang berinteraksi dengan RandomNumberBloc untuk mengelola logika terkait angka acak. Dengan menetapkan widget utama sebagai RandomScreen dalam fungsi main, aplikasi memulai alur kerja yang terstruktur sesuai konsep BLoC, di mana logika bisnis dipisahkan dari antarmuka pengguna.
+
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![Praktikum Soal 13](docs/Soal13.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
+
