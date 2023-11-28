@@ -132,7 +132,16 @@ class ColorStream {
 **Soal 8**
 
 - Jelaskan maksud kode langkah 1-3 tersebut!
+> Pada langkah 1, Menambahkan variabel transformer ke dalam kelas _StreamHomePageState. Variabel ini memiliki tipe StreamTransformer, yang merupakan objek yang dapat mengubah (transform) nilai di dalam stream.
+
+> Pada langkah 2, Membuat objek StreamTransformer dengan menggunakan metode fromHandlers. Objek ini digunakan untuk mengubah nilai di dalam stream. Dalam kasus ini, nilai diubah dengan mengalikan setiap nilai dengan 10. Selain itu, terdapat penanganan error yang menghasilkan nilai -1, dan penanganan ketika stream selesai.
+
+> Pada langkah 3, Menggunakan transform pada stream untuk menerapkan transformasi yang telah ditentukan oleh transformer. Setiap nilai yang masuk ke dalam stream akan dikalikan dengan 10 sesuai dengan logika yang didefinisikan dalam transformer. Selanjutnya, Anda mendengarkan perubahan pada stream seperti biasa dan memperbarui UI melalui setState.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![Praktikum Soal 8](docs/Soal8.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
 
 ### Praktikum 4: Subscribe ke stream events
