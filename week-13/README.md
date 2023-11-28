@@ -185,7 +185,13 @@ class ColorStream {
 **Soal 12**
 
 - Jelaskan maksud kode pada langkah 3 dan 7 !
+> Pada Langkah 3 melibatkan pembuatan class NumberStream(), yang mencakup metode getNumbers() untuk menghasilkan stream yang berisi angka-angka acak. Stream ini diperbarui setiap 1 detik.
+
+> Pada Langkah 7 menunjukkan penggunaan kode untuk membuat antarmuka pengguna (UI) yang dapat menampilkan nilai dari stream secara real-time. Untuk mencapai ini, digunakan StreamBuilder, yang secara otomatis memperbarui antarmuka setiap kali ada perubahan dalam stream. Perubahan ini dapat berupa perubahan nilai atau munculnya error. Dalam kasus terjadinya error, pesan 'Error!' akan ditampilkan. Jika tidak ada error dan data diterima dari stream, angka acak akan ditampilkan dengan ukuran font setara dengan 96. Namun, jika tidak ada data yang diterima, antarmuka akan menampilkan widget kosong.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![Praktikum Soal 12](docs/Soal12.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
 
 ### Praktikum 7: BLoC Pattern
